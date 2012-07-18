@@ -13,11 +13,16 @@
       <div id='container'></div>
       
       <script type="text/template" id="search-template"> 
-        <form class="form-search">
-          <input type="text" class="input-medium-search-query">
-          <button type="submit" class="btn">Search</button>
-        </form>
+        <input type="text" class="input-medium-search-query">
+        <button type="submit" class="btn">Search</button>
       </script>
+      <script type="text/template" id="show-template">
+        <p><%= show.attendance %></p>
+      </script>
+      <script type="text/template" id="error-template">
+        <p>Sorry, no shows available for this artist.</p>
+      </script>
+      
       <script src="js/jquery.min.js"></script>
       <script src="js/underscore.js"></script>
       <script src="js/backbone.js"></script>
